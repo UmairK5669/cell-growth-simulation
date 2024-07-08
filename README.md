@@ -66,15 +66,17 @@ Here's an overview of the project structure and its key components:
 - useInterval.ts: A custom hook that sets up an interval to run the simulation.
 - App.css: The main CSS file for styling the application.
 
-### Assumptions and Additional Features
+## Assumptions and Additional Features
 
-## Assumptions
-The initial grid size is set to 20x20.
-The simulation logic for cell growth is based on randomly occupying adjacent empty cells.
+### Assumptions
 
-## Additional Features
-Performance optimization for larger grid sizes.
-Enhanced visualization for the growth chart.
-Saving and loading the simulation state.
-Mobile-friendly design improvements.
+- The initial grid size is set to 20x20.
+- The simulation logic for cell growth is based on randomly occupying adjacent empty cells.
+
+### Additional Features
+
+- Performance optimization for larger grid sizes.
+- Enhanced visualization for the growth chart.
+- Saving and loading the simulation state.
+- Mobile-friendly design improvements.
   
