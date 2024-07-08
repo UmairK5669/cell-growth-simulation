@@ -2,37 +2,145 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.App h1 {
+  font-size: 24px;
+  margin-top: 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.grid {
+  display: grid;
+  grid-gap: 1px;
+  margin: 20px auto;
+  width: max-content;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.cell {
+  width: 20px;
+  height: 20px;
+  background-color: #f0f0f0;
+  border: 1px solid #ddd;
+}
+
+.cell.occupied {
+  background-color: #4caf50;
+}
+
+.cell:focus {
+  outline: 2px solid #000;
+}
+
+.controls {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  gap: 10px;
+  margin: 20px;
 }
 
-.App-link {
-  color: #61dafb;
+.controls button,
+.controls input {
+  padding: 5px 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.controls label {
+  margin-right: 5px;
+}
+
+.error {
+  color: red;
+  margin-top: 10px;
+}
+
+.growth-chart {
+  margin-top: 20px;
+}
+
+.growth-chart svg {
+  width: 100%;
+  height: auto;
+}
+
+.growth-chart {
+  margin: 20px auto;
+  width: 400px;
+  height: 200px;
+  border: 1px solid #ddd;
+}
+
+.controls {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin: 20px;
+}
+
+.controls button {
+  padding: 5px 10px;
+}
+
+.controls input {
+  width: 60px;
+  text-align: center;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(20, 20px); /* Updated to use variable */
+  grid-gap: 1px;
+  margin: 20px auto;
+  width: max-content;
+}
+
+.cell {
+  width: 20px;
+  height: 20px;
+  background-color: #f0f0f0;
+  border: 1px solid #ddd;
+}
+
+.cell.occupied {
+  background-color: #4caf50;
+}
+
+.controls {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin: 20px;
+}
+
+.controls button {
+  padding: 5px 10px;
+}
+
+.controls input {
+  width: 60px;
+  text-align: center;
+}
+
+.growth-chart {
+  margin: 20px auto;
+  width: 400px;
+  height: 200px;
+  border: 1px solid #ddd;
+}
+
+.App {
+  text-align: center;
+}
+
+.App h1 {
+  font-size: 24px;
+  margin-top: 20px;
+}
+
+.growth-chart {
+  margin: 20px auto;
+  width: 400px;
+  height: 240px; /* Increased height to accommodate labels */
+  border: 1px solid #ddd;
+  position: relative;
+}
+
+.growth-chart svg {
+  overflow: visible; /* Ensure labels are not clipped */
 }
