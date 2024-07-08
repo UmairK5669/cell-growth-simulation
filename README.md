@@ -1,46 +1,69 @@
-# Getting Started with Create React App
+<h1 align="center"> Cell Growth Simulation </h1>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<p align="center">
+<img width="600" alt="Cell Growth Simulation" src="https://github.com/UmairK5669/cell-growth-simulation/assets/102482696/5cb06e2d-3655-45b3-887e-0db6dfa91885">
+</p>
+<p align="center">This project is a cell growth simulation web application built using React and TypeScript. The application allows users to simulate cell growth over time on a grid. Users can start, pause, and reset the simulation, adjust the interval speed, and change the grid size dynamically. The application also includes a growth chart to visualize the number of occupied cells over time.
+</p>
+<h2 align="center"> <a target="_blank" href="https://hugoplate.netlify.app/" rel="nofollow">👀 Demo</a> | <a  target="_blank" href="https://pagespeed.web.dev/analysis/https-hugoplate-netlify-app/6lyxjw6t4r?form_factor=desktop">Page Speed (95+) 🚀</a>
 
-## Available Scripts
+### Features
 
-In the project directory, you can run:
+- Interactive grid where users can toggle cells between occupied and unoccupied states.
+- Simulation of cell growth based on adjacent cells.
+- Dynamic adjustment of simulation speed (interval).
+- Ability to change the grid size.
+- Growth chart to visualize the cell growth over time.
+- Responsive design for different screen sizes.
 
-### `npm start`
+## Setup and Running the Project
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Follow these instructions to set up and run the project locally.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+### Installation
 
-### `npm test`
+1. **Clone the repository and move to the project directory:**
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+   ```bash
+   git clone https://github.com/your-username/cell-growth-simulation.git
+   cd cell-growth-simulation
 
-### `npm run build`
+2. **Running the Project**
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+   ```bash
+   npm start
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Project Structure and Key Components
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Here's an overview of the project structure and its key components:
 
-### `npm run eject`
+    cell-growth-simulation/
+    ├── public/
+    │   ├── index.html
+    ├── src/
+    │   ├── components/
+    │   │   ├── Cell.tsx
+    │   │   ├── Controls.tsx
+    │   │   ├── Grid.tsx
+    │   │   └── GrowthChart.tsx
+    │   ├── hooks/
+    │   │   └── useInterval.ts
+    │   ├── styles/
+    │   │   └── App.css
+    │   ├── App.tsx
+    │   ├── index.tsx
+    ├── package.json
+    ├── tsconfig.json
+    └── README.md
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+### Key Components
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- App.tsx: The main component that sets up the grid, controls, and growth chart. It manages the state of the simulation, including the grid, running state, interval, and growth rate.
+- Grid.tsx: A component that renders the grid and handles cell click events.
+- Cell.tsx: A component that represents a single cell in the grid.
+- Controls.tsx: A component that provides controls to start, pause, reset the simulation, and change the interval speed and grid size.
+- GrowthChart.tsx: A component that renders the growth chart showing the number of occupied cells over time.
+- useInterval.ts: A custom hook that sets up an interval to run the simulation.
+- App.css: The main CSS file for styling the application.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+  
