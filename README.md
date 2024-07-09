@@ -5,7 +5,7 @@
 </p>
 <p align="center">This project is a cell growth simulation web application built using React and TypeScript. The application allows users to simulate cell growth over time on a grid. Users can start, pause, and reset the simulation, adjust the interval speed, and change the grid size dynamically. The application also includes a growth chart to visualize the number of occupied cells over time.
 </p>
-<h2 align="center"> <a target="_blank" href="https://hugoplate.netlify.app/" rel="nofollow">👀 Demo</a> | <a  target="_blank" href="https://pagespeed.web.dev/analysis/https-cell-growth-simulation-tau-vercel-app/d32hvxzjey?form_factor=desktop">Performance (100) 🚀</a>
+<h2 align="center"> <a target="blank" href="https://cell-growth-simulation-tau.vercel.app/" rel="nofollow">👀 Demo</a> | <a  target="_blank" href="https://pagespeed.web.dev/analysis/https-cell-growth-simulation-tau-vercel-app/d32hvxzjey?form_factor=desktop">Performance (100) 🚀</a>
 
 ### Features
 
