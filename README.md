@@ -18,9 +18,10 @@
 
 ## Setup and Running the Project
 
-Follow these instructions to set up and run the project locally.
-
 ### Installation
+
+> [!CAUTION]
+> This assumes you have `Node.js` installed, if you don't, please click [here](https://nodejs.org/en/download/package-manager) to install it first. 
 
 1. **Clone the repository and move to the project directory:**
 
@@ -28,7 +29,7 @@ Follow these instructions to set up and run the project locally.
    git clone https://github.com/your-username/cell-growth-simulation.git
    cd cell-growth-simulation
 
-2. **Running the Project**
+3. **Running the Project**
 
    ```bash
    npm start
