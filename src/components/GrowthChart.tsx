@@ -5,7 +5,7 @@ interface GrowthChartProps {
 }
 
 const GrowthChart: React.FC<GrowthChartProps> = ({ data }) => {
-  const max = Math.max(...data, 1);
+  const max = Math.max(...data, 1); // Get the maximum value in the data to scale the chart
   const chartWidth = 400;
   const chartHeight = 200;
 
@@ -14,12 +14,12 @@ const GrowthChart: React.FC<GrowthChartProps> = ({ data }) => {
       <svg width={chartWidth} height={chartHeight}>
         {data.map((value, index) => (
           <rect
-            key={index}
-            x={(index * chartWidth) / data.length}
-            y={chartHeight - (value * chartHeight) / max}
-            width={Math.max(1, chartWidth / data.length - 1)}
-            height={(value * chartHeight) / max}
-            fill="green"
+            key={index} // Unique key for each bar
+            x={(index * chartWidth) / data.length} // X position of the bar
+            y={chartHeight - (value * chartHeight) / max} // Y position of the bar
+            width={Math.max(1, chartWidth / data.length - 1)} // Width of the bar
+            height={(value * chartHeight) / max} // Height of the bar
+            fill="green" // Bar color
           />
         ))}
         {/* X-axis */}

@@ -7,19 +7,19 @@ interface GridProps {
 }
 
 const Grid: React.FC<GridProps> = ({ grid, onCellClick }) => {
-  const gridSize = grid.length;
+  const gridSize = grid.length; // Determine the size of the grid
   return (
     <div
       className="grid"
-      style={{ gridTemplateColumns: `repeat(${gridSize}, 20px)` }}
+      style={{ gridTemplateColumns: `repeat(${gridSize}, 20px)` }} // Define CSS grid columns
       role="grid"
     >
       {grid.map((row, rowIndex) =>
         row.map((cell, colIndex) => (
           <Cell
-            key={`${rowIndex}-${colIndex}`}
-            occupied={cell}
-            onClick={() => onCellClick(rowIndex, colIndex)}
+            key={`${rowIndex}-${colIndex}`} // Unique key for each cell
+            occupied={cell} // Cell occupied state
+            onClick={() => onCellClick(rowIndex, colIndex)} // Click handler for cell
           />
         ))
       )}

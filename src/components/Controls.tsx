@@ -15,19 +15,21 @@ const Controls: React.FC<ControlsProps> = ({
   onIntervalChange,
   onGridSizeChange,
 }) => {
-  const [interval, setInterval] = useState(1000);
-  const [gridSize, setGridSize] = useState(20);
+  const [interval, setInterval] = useState(1000); // Local state for interval input
+  const [gridSize, setGridSize] = useState(20); // Local state for grid size input
 
+  // Handle change in interval input
   const handleIntervalChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const newInterval = parseInt(e.target.value, 10);
     setInterval(newInterval);
-    onIntervalChange(newInterval);
+    onIntervalChange(newInterval); // Notify parent component
   };
 
+  // Handle change in grid size input
   const handleGridSizeChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const newSize = parseInt(e.target.value, 10);
     setGridSize(newSize);
-    onGridSizeChange(newSize);
+    onGridSizeChange(newSize); // Notify parent component
   };
 
   return (

@@ -8,15 +8,15 @@ interface CellProps {
 const Cell: React.FC<CellProps> = ({ occupied, onClick }) => {
   return (
     <div
-      className={`cell ${occupied ? 'occupied' : ''}`}
-      onClick={onClick}
+      className={`cell ${occupied ? 'occupied' : ''}`} // Add class based on occupied state
+      onClick={onClick} // Click event handler
       onKeyDown={(e) => {
         if (e.key === 'Enter') {
-          onClick();
+          onClick(); // Handle Enter key press for accessibility
         }
       }}
-      role="gridcell"
-      tabIndex={0}
+      role="gridcell" // ARIA role for accessibility
+      tabIndex={0} // Make cell focusable
     ></div>
   );
 };
